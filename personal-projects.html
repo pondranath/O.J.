@@ -95,6 +95,23 @@
       margin-top: 5px;
       color: #444;
     }
+
+    /* Slide-in animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out forwards;
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
@@ -110,19 +127,18 @@
     <section id="competitive-programming">
       <h2>Competitive Programming</h2>
       <p>
-        Based on my profile, I have demonstrated the ability to solve problems within the 1800-2000 elo range on CodeChef, which is around 3-4 stars. (Please refer to the recent activity tab to see the problems I have recently submitted, and you can check their elos.) 
+        Based on my profile, I have demonstrated the ability to solve problems within the 1800-2000 elo range on CodeChef, which is around 3-4 stars. (Please refer to the recent activity tab to see the problems I have recently submitted, and you can check their elos.)
       </p>
-      <p> 
+      <p>
         Competitive programming is interesting to me not just because of the competitive aspect but because it's similar to solving puzzles using code. And each solution has to be general, and has to apply to all test cases, so it fosters more critical thinking. As of now, I am focusing my efforts on learning more about backtracking and DFS (generating permutations, depth of binary tree). These will definitely help in my competitive programming journey.
       </p>
       <p>
-        I also have done some questions on codewars to improve my coding skills, and codewars questions are kind of a mix between leetcode and a bit of competitive programming. 
+        I also have done some questions on codewars to improve my coding skills, and codewars questions are kind of a mix between leetcode and a bit of competitive programming.
       </p>
-      <p><a href="https://www.codechef.com/users/ojas_j" target="_blank" rel="noopener noreferrer" class="code-link">CodeChef Profile</a>.</p>
-      <p><a href="https://www.codewars.com/users/Defender1" target="_blank" rel="noopener noreferrer" class="code-link">Codewars Profile</a>.</p>
-      <p><a href="https://leetcode.com/u/kar98k_fired/" target="_blank" rel="noopener noreferrer" class="code-link">LeetCode Profile</a>.</p>
+      <p>This is my <a href="https://www.codechef.com/users/ojas_j" target="_blank" rel="noopener noreferrer" class="code-link">CodeChef Profile</a>.</p>
+      <p>This is my <a href="https://www.codewars.com/users/Defender1" target="_blank" rel="noopener noreferrer" class="code-link">Codewars Profile</a>.</p>
+      <p>Check out my <a href="https://leetcode.com/u/kar98k_fired/" target="_blank" rel="noopener noreferrer" class="code-link">LeetCode Profile</a>.</p>
     </section>
-      
 
     <section id="blender">
       <h2>Blender/Unity</h2>
@@ -130,12 +146,10 @@
         I am currently aiming to develop an FPS game that is single player. It is ambitious in nature, but I intend to make it simple for now, (for example shooting stationary targets) and then progress from there.
       </p>
       <p>
-
         I am developing an FPS game as I am familiar with the core mechanics of FPS games in general and believe I can implement these mechanics if I know them by heart. As of now, I have made some very basic models of the guns in blender, and I am using unity as the game engine. Below are the images of some of the gun models I have created.
       </p>
-      <img src="images/blender_gun_render.jpg" width="300" height="200" alt="Desert Eagle render for my FPS game that I am making" class="blender-image" />
-    
-      <img src="images/soledar.jpg" width="350" height="200" alt="Pistol render for game" class="blender-image" />
+      <img src="images/blender_gun_render.jpg" width="300" height="200" alt="Desert Eagle render for my FPS game that I am making" class="blender-image slide-in" />
+      <img src="images/soledar.jpg" width="350" height="200" alt="Pistol render for game" class="blender-image slide-in" />
       <div class="image-caption">Blender project for the FPS game that I am making.</div>
     </section>
 
